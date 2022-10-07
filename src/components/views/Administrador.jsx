@@ -3,7 +3,7 @@ import ItemProducto from "./productos/ItemProducto";
 
 const Administrador = () => {
   return (
-    <Container>
+    <Container className="mainSection">
       <div className="d-flex justify-content-around">
         <h1>Productos disponibles</h1>
         <Button className="py-1">Agregar</Button>

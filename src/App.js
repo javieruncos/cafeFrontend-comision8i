@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import DetalleProducto from './components/views/productos/DetalleProducto';
 import CrearProducto from './components/views/productos/CrearProducto';
 import EditarProducto from './components/views/productos/EditarProducto';
+import './App.css'
 
 function App() {
   return (
