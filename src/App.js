@@ -5,6 +5,9 @@ import Administrador from './components/views/Administrador';
 import Error404 from './components/views/Error404';
 import Inicio from './components/views/Inicio';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import DetalleProducto from './components/views/productos/DetalleProducto';
+import CrearProducto from './components/views/productos/CrearProducto';
+import EditarProducto from './components/views/productos/EditarProducto';
 
 function App() {
   return (
@@ -15,6 +18,9 @@ function App() {
         {/*las rutas son siempre nombre de dominio + path */}
         <Route exact path='/' element={<Inicio></Inicio>}></Route>
         <Route exact path='/administrador' element={<Administrador/>}></Route>
+        <Route exact path='/detalleProducto' element={<DetalleProducto/>}></Route>
+        <Route exact path='/crearProducto' element={<CrearProducto/>}></Route>
+        <Route exact path='/editarProducto' element={<EditarProducto/>}></Route>
         <Route exact path='*' element={<Error404/>}></Route>
        </Routes>
        <Footer></Footer>
