@@ -1,16 +1,30 @@
 import React from "react";
 import { Form, Button, Container } from "react-bootstrap";
+import {useForm} from 'react-hook-form'
 
 const CrearProducto = () => {
+
+    const {register,handleSubmit,formState:{errors}}= useForm();
+
+    const onSubmit = (data)=>{
+      console.log(data)
+    }
+
+
+
+
   return (
     <Container className="my-4">
       <h1>Nuevo Producto</h1>
       <hr />
       <div>
-        <Form>
+        <Form noValidate onSubmit={handleSubmit(onSubmit)}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Nombre producto</Form.Label>
-            <Form.Control type="text" placeholder="Ej cafe" />
+            <Form.Control 
+            type="text" 
+            placeholder="Ej cafe"
+            {...register("nombreProducto",{required:true})} />
             <Form.Text className="text-danger">error</Form.Text>
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicEmail">
