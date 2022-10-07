@@ -1,7 +1,22 @@
+import { useEffect ,useState } from "react";
 import { Button, Container,Table } from "react-bootstrap";
+import { consultarApi } from "../../helper/queries";
 import ItemProducto from "./productos/ItemProducto";
 
 const Administrador = () => {
+
+  const [productos, setProductos] = useState([])
+
+  useEffect(()=>{
+    consultarApi().then((respuesta)=>{
+      setProductos(respuesta)
+    })
+   
+  },[])
+
+
+
+
   return (
     <Container className="mainSection">
       <div className="d-flex justify-content-around">
@@ -22,7 +37,10 @@ const Administrador = () => {
             </tr>
           </thead>
           <tbody>
-           <ItemProducto/>
+            {
+              productos.map((item)=><ItemProducto key={item.id} producto={item}/>)
+            }
+          
           </tbody>
         </Table>
       </div>

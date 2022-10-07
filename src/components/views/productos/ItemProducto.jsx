@@ -1,15 +1,15 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 
-const ItemProducto = () => {
+const ItemProducto = ({producto}) => {
   return (
     <>
       <tr>
-        <td>1</td>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        <td>Dulce</td>
+        <td>{producto.id}</td>
+        <td>{producto.nombreProducto}</td>
+        <td>${producto.precio}</td>
+        <td>{producto.imagen}</td>
+        <td>{producto.categoria}</td>
         <td><Button className="me-2">Editar</Button><Button>Borrar</Button></td>
       </tr>
      
