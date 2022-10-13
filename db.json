@@ -1,26 +1,32 @@
 {
-  "productos":[
+  "productos": [
     {
-        "nombreProducto":"cafè",
-        "precio":300,
-        "categoria":"Bebida caliente",
-        "imagen":"https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "id":1
+      "nombreProducto": "cafè",
+      "precio": 300,
+      "categoria": "Bebida caliente",
+      "imagen": "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "id": 1
     },
     {
-        "nombreProducto":"rownie",
-        "precio":250,
-        "categoria":"Dulce",
-        "imagen":"https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "id":2
+      "nombreProducto": "rownie",
+      "precio": 250,
+      "categoria": "Dulce",
+      "imagen": "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "id": 2
     },
     {
-        "nombreProducto":"tè",
-        "precio":100,
-        "categoria":"Bebida caliente",
-        "imagen":"https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "id":3
+      "nombreProducto": "tè",
+      "precio": 100,
+      "categoria": "Bebida caliente",
+      "imagen": "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "id": 3
+    },
+    {
+      "nombreProducto": "Brownie 2",
+      "precio": 100,
+      "categoria": "Bebida caliente",
+      "imagen": "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "id": 4
     }
   ]
-
 }
