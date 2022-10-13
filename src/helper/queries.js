@@ -1,4 +1,8 @@
 const URL = process.env.REACT_APP_API_CAFECITO;
+// peticion get para obtener producto
+// peticion POST crear producto
+// peticion PUT sirve para modificar un producto
+// peticion DELETE sirve para borrar un producto
 
 
 
