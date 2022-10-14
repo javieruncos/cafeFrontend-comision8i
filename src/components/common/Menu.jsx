@@ -14,6 +14,8 @@ const Menu = () => {
               <Nav.Link href="#link">Link</Nav.Link> */}
               <NavLink to='/' className={'nav-item nav-link'}>Inicio</NavLink>
               <NavLink to='administrador' className={'nav-item nav-link'}>Administrador</NavLink>
+              <NavLink to='login' className={'btn btn-warning d-block w-50 me-1 mt-1'}>Login</NavLink>
+              <NavLink to='registrarse' className={'btn btn-warning d-block w-50 me-1 mt-1'}>registrarse</NavLink>
             </Nav>
           </Navbar.Collapse>
         </Container>
