@@ -8,27 +8,6 @@
       "id": 1
     },
     {
-      "nombreProducto": "rownie",
-      "precio": 250,
-      "categoria": "Dulce",
-      "imagen": "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "id": 2
-    },
-    {
-      "nombreProducto": "tè",
-      "precio": 100,
-      "categoria": "Bebida caliente",
-      "imagen": "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "id": 3
-    },
-    {
-      "nombreProducto": "Brownie 2",
-      "precio": 100,
-      "categoria": "Bebida caliente",
-      "imagen": "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "id": 4
-    },
-    {
       "nombreProducto": "medialuna",
       "precio": "50",
       "imagen": "https://sporting.vtexassets.com/arquivos/ids/617672-800-800?v=637977258556470000&width=800&height=800&aspect=true",
@@ -36,18 +15,18 @@
       "id": 5
     },
     {
-      "nombreProducto": "torta de hojaldre ",
-      "precio": "300",
-      "imagen": "https://sporting.vtexassets.com/arquivos/ids/530802-800-800?v=637886659818300000&width=800&height=800&aspect=true",
-      "categoria": "Dulce",
-      "id": 6
-    },
-    {
       "nombreProducto": "Porcion de torta ML",
       "precio": "300",
       "imagen": "https://th.bing.com/th/id/OIP.AR86W2bf5HNk6mAQ5D5pagHaLH?pid=ImgDet&rs=1",
       "categoria": "Dulce",
       "id": 7
+    },
+    {
+      "nombreProducto": "cafe2",
+      "precio": "400",
+      "imagen": "https://th.bing.com/th/id/OIP.AR86W2bf5HNk6mAQ5D5pagHaLH?pid=ImgDet&rs=1",
+      "categoria": "Bebida caliente",
+      "id": 8
     }
   ]
 }

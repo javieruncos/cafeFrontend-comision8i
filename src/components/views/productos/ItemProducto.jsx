@@ -1,7 +1,28 @@
 import React from "react";
 import { Button } from "react-bootstrap";
+import Swal from "sweetalert2";
+import { borrarProductoApi, consultarApi } from "../../../helper/queries";
 
-const ItemProducto = ({producto}) => {
+const ItemProducto = ({producto,setProductos}) => {
+
+  const borrarProducto =()=>{
+    borrarProductoApi(producto.id).then((respuesta)=>{
+       if(respuesta.status === 200){
+           Swal.fire("producto eliminado","el producto fue exitosamente borrado","success")
+          //  busco todos los productos existentes en ese momento de tiempo 
+          consultarApi().then((respuesta)=>{
+            // actualizo el state de productos de Administrador con los daros que hay en la API
+            setProductos(respuesta)
+          })
+       }else{
+        Swal.fire("ocurrio un error","intente esta operacion mas tarde","error")
+       }
+    })
+  }
+
+
+
+
   return (
     <>
       <tr>
@@ -10,7 +31,7 @@ const ItemProducto = ({producto}) => {
         <td>${producto.precio}</td>
         <td>{producto.imagen}</td>
         <td>{producto.categoria}</td>
-        <td><Button className="my-1">Editar</Button><Button>Borrar</Button></td>
+        <td><Button className="my-1">Editar</Button><Button onClick={borrarProducto}>Borrar</Button></td>
       </tr>
      
     </>
