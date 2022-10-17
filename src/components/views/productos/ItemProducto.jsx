@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "react-bootstrap";
 import Swal from "sweetalert2";
 import { borrarProductoApi, consultarApi } from "../../../helper/queries";
+import { Link } from "react-router-dom";
 
 const ItemProducto = ({producto,setProductos}) => {
 
@@ -31,7 +32,7 @@ const ItemProducto = ({producto,setProductos}) => {
         <td>${producto.precio}</td>
         <td>{producto.imagen}</td>
         <td>{producto.categoria}</td>
-        <td><Button className="my-1">Editar</Button><Button onClick={borrarProducto}>Borrar</Button></td>
+        <td><Button className="my-1" as={Link} to="/editarProducto">Editar</Button><Button onClick={borrarProducto}>Borrar</Button></td>
       </tr>
      
     </>
