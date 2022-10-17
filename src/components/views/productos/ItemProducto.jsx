@@ -10,7 +10,7 @@ const ItemProducto = ({producto}) => {
         <td>${producto.precio}</td>
         <td>{producto.imagen}</td>
         <td>{producto.categoria}</td>
-        <td><Button className="me-2">Editar</Button><Button>Borrar</Button></td>
+        <td><Button className="my-1">Editar</Button><Button>Borrar</Button></td>
       </tr>
      
     </>

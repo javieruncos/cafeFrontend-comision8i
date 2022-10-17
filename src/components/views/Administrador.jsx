@@ -1,5 +1,6 @@
 import { useEffect ,useState } from "react";
 import { Button, Container,Table } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { consultarApi } from "../../helper/queries";
 import ItemProducto from "./productos/ItemProducto";
 
@@ -19,9 +20,9 @@ const Administrador = () => {
 
   return (
     <Container className="mainSection">
-      <div className="d-flex justify-content-around">
+      <div className="d-flex justify-content-around my-5">
         <h1>Productos disponibles</h1>
-        <Button className="py-1">Agregar</Button>
+        <Button  as={Link} to="/crearProducto">Agregar</Button>
       </div>
       <hr />
       <div>
