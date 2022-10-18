@@ -32,7 +32,16 @@ const ItemProducto = ({producto,setProductos}) => {
         <td>${producto.precio}</td>
         <td>{producto.imagen}</td>
         <td>{producto.categoria}</td>
-        <td><Button className="my-1" as={Link} to="/editarProducto">Editar</Button><Button onClick={borrarProducto}>Borrar</Button></td>
+        <td><Button 
+        className="my-1" 
+        as={Link} 
+        to="/editarProducto"
+        variant="warning"
+        >Editar</Button>
+        <Button 
+        onClick={borrarProducto}
+        variant="danger"
+        >Borrar</Button></td>
       </tr>
      
     </>

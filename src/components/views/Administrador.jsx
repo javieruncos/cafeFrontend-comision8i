@@ -20,9 +20,14 @@ const Administrador = () => {
 
   return (
     <Container className="mainSection">
-      <div className="d-flex justify-content-around my-5">
+      <div className="my-5 d-flex justify-content-around">
         <h1>Productos disponibles</h1>
-        <Button  as={Link} to="/crearProducto">Agregar</Button>
+        <Button  
+        as={Link} 
+        to="/crearProducto" 
+        className="mt-2" 
+        style={{"height":40}}
+        >Agregar</Button>
       </div>
       <hr />
       <div>
