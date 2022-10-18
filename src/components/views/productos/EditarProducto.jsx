@@ -1,12 +1,33 @@
+import { useEffect } from "react";
 import { Container, Button, Form } from "react-bootstrap";
-import {useForm} from "react-hook-form"
+import {useForm} from "react-hook-form";
+import { useParams } from "react-router-dom";
+import { obtenerProductoApi } from "../../../helper/queries";
 
 const EditarProducto = () => {
 
-   const {register,handleSubmit,formState:{errors}} = useForm()
+   const {id} = useParams()
+
+    useEffect(()=>{
+      obtenerProductoApi(id).then((respuesta)=>{
+        if(respuesta.status === 200){
+          console.log(respuesta)
+          setValue("nombreProducto",respuesta.dato.nombreProducto)
+          setValue("precio",respuesta.dato.precio)
+          setValue("imagen",respuesta.dato.imagen)
+          setValue("categoria",respuesta.dato.categoria)
+        }
+      })
+    },[])
+
+
+
+
+   const {register,handleSubmit,formState:{errors},setValue} = useForm()
 
     const onSubmit =(data)=>{
       console.log(data)
+      // pedir a la Api actualizar los datos 
     }
 
 

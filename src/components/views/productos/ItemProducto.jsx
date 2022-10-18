@@ -61,7 +61,7 @@ const ItemProducto = ({ producto, setProductos }) => {
           <Button
             className="my-1"
             as={Link}
-            to="/editarProducto"
+            to={`/administrador/editarProducto/${producto.id}`}
             variant="warning"
           >
             Editar
