@@ -15,7 +15,7 @@ const CrearProducto = () => {
       console.log(data)
       // enviar una peticion a la API
       crearProductoApi(data).then((respuesta)=>{
-           if(respuesta.status===201){
+           if(respuesta.status === 201){
             Swal.fire("Producto creado ","El producto fue correctamente cargado","success")
             // aqui quiero resetear los value del formulario
             reset();

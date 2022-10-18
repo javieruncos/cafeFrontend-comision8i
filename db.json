@@ -28,5 +28,38 @@
       "categoria": "Bebida caliente",
       "id": 8
     }
+  ],
+  "usuarios": [
+    {
+      "nombreUsuario": "Juan",
+      "apellido": "Perez",
+      "email": "JuanPerez@gmail.com",
+      "contraseña": "juan12345",
+      "id": 1
+    },
+    {
+      "nombreUsuario": "ale",
+      "apellido": "perez",
+      "email": "ale@gmail.com",
+      "contraseña": "ale12345",
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "nombreUsuario": "hernan",
+      "Apellido": "perez",
+      "Email": "hernan@gmail.com",
+      "contraseña": "hernan123456789",
+      "id": 4
+    },
+    {
+      "nombreUsuario": "javier",
+      "Apellido": "uncos",
+      "Email": "javier@gmail.com",
+      "contraseña": "javier12345677",
+      "id": 5
+    }
   ]
 }

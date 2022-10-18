@@ -8,6 +8,7 @@ const URL = process.env.REACT_APP_API_CAFECITO;
 
 
 
+
 export  const consultarApi = async()=>{
 //  peticion get para obtener los productos
    try{
