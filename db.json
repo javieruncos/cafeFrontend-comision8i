@@ -1,8 +1,8 @@
 {
   "productos": [
     {
-      "nombreProducto": "cafe",
-      "precio": "344",
+      "nombreProducto": "te",
+      "precio": "150",
       "imagen": "https://th.bing.com/th/id/OIP.AR86W2bf5HNk6mAQ5D5pagHaLH?pid=ImgDet&rs=1",
       "categoria": "Bebida caliente",
       "id": 1

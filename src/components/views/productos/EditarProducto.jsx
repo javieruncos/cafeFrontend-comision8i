@@ -1,8 +1,9 @@
 import { useEffect } from "react";
 import { Container, Button, Form } from "react-bootstrap";
 import {useForm} from "react-hook-form";
-import { useParams } from "react-router-dom";
-import { obtenerProductoApi } from "../../../helper/queries";
+import { useParams ,useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
+import { editarProductoApi, obtenerProductoApi } from "../../../helper/queries";
 
 const EditarProducto = () => {
 
@@ -20,7 +21,7 @@ const EditarProducto = () => {
       })
     },[])
 
-
+    const navegacion = useNavigate()
 
 
    const {register,handleSubmit,formState:{errors},setValue} = useForm()
@@ -28,6 +29,15 @@ const EditarProducto = () => {
     const onSubmit =(data)=>{
       console.log(data)
       // pedir a la Api actualizar los datos 
+      editarProductoApi(id,data).then((respuesta)=>{
+          if(respuesta.status === 200){
+              Swal.fire("Producto modificado","El producto fue modificado correctamente","success");
+              navegacion("/administrador")
+
+          }else{
+            Swal.fire("Ocurrio un error","El producto no pudo ser modificado","error")
+          }
+      })
     }
 
 
