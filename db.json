@@ -6,6 +6,13 @@
       "imagen": "https://th.bing.com/th/id/OIP.AR86W2bf5HNk6mAQ5D5pagHaLH?pid=ImgDet&rs=1",
       "categoria": "Bebida caliente",
       "id": 1
+    },
+    {
+      "nombreProducto": "medialuna",
+      "precio": "444",
+      "imagen": "https://th.bing.com/th/id/OIP.AR86W2bf5HNk6mAQ5D5pagHaLH?pid=ImgDet&rs=1",
+      "categoria": "Dulce",
+      "id": 2
     }
   ],
   "usuarios": [
