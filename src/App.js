@@ -21,7 +21,7 @@ function App() {
         {/*las rutas son siempre nombre de dominio + path */}
         <Route exact path='/' element={<Inicio></Inicio>}></Route>
         <Route exact path='/administrador' element={<Administrador/>}></Route>
-        <Route exact path='/detalleProducto' element={<DetalleProducto/>}></Route>
+        <Route exact path='/detalleProducto/:id' element={<DetalleProducto/>}></Route>
         <Route exact path='/crearProducto' element={<CrearProducto/>}></Route>
         <Route exact path='/administrador/editarProducto/:id' element={<EditarProducto/>}></Route>
         <Route exact path='/login' element={<Login/>}></Route>

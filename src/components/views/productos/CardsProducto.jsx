@@ -12,7 +12,7 @@ const CardsProducto = ({producto}) => {
           <Card.Text>
             categoria: {producto.categoria}
           </Card.Text>
-          <Button as={Link} to="/detalleProducto" variant="danger">ver detalle</Button>
+          <Button as={Link} to={`/detalleProducto/${producto.id}`}  variant="danger">ver detalle</Button>
         </Card.Body>
       </Card>
     </Col>
