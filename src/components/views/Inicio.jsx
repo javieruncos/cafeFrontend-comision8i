@@ -10,7 +10,7 @@ const Inicio = () => {
 
      useEffect(()=>{
        consultarApi().then((respuesta)=>{
-           setArregloProducto(respuesta)
+           setArregloProducto(respuesta.productos)
        })
      },[])
 
@@ -25,7 +25,7 @@ const Inicio = () => {
             </div>
             <Row>
                 {
-                    arregloProducto.map((item,indice)=><CardsProducto producto={item} key={indice}/>)
+                    arregloProducto.map((item)=><CardsProducto producto={item} key={item._id}/>)
                 }
             </Row>
         </Container>

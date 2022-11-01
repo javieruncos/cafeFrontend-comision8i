@@ -17,7 +17,7 @@ const ItemProducto = ({ producto, setProductos }) => {
     }).then((result) => {
       if (result.isConfirmed) {
 
-        borrarProductoApi(producto.id).then((respuesta) => {
+        borrarProductoApi(producto._id).then((respuesta) => {
           if (respuesta.status === 200) {
             Swal.fire(
               "producto eliminado",
@@ -27,7 +27,7 @@ const ItemProducto = ({ producto, setProductos }) => {
             //  busco todos los productos existentes en ese momento de tiempo
             consultarApi().then((respuesta) => {
               // actualizo el state de productos de Administrador con los daros que hay en la API
-              setProductos(respuesta);
+              setProductos(respuesta.productos);
             });
           } else {
             Swal.fire(
@@ -52,7 +52,7 @@ const ItemProducto = ({ producto, setProductos }) => {
   return (
     <>
       <tr>
-        <td>{producto.id}</td>
+        <td>{producto._id}</td>
         <td>{producto.nombreProducto}</td>
         <td>${producto.precio}</td>
         <td>{producto.imagen}</td>
@@ -61,7 +61,7 @@ const ItemProducto = ({ producto, setProductos }) => {
           <Button
             className="my-1"
             as={Link}
-            to={`/administrador/editarProducto/${producto.id}`}
+            to={`/administrador/editarProducto/${producto._id}`}
             variant="warning"
           >
             Editar

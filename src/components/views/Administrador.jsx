@@ -10,7 +10,7 @@ const Administrador = () => {
 
   useEffect(()=>{
     consultarApi().then((respuesta)=>{
-      setProductos(respuesta)
+      setProductos(respuesta.productos)
     })
    
   },[])
@@ -44,7 +44,7 @@ const Administrador = () => {
           </thead>
           <tbody>
             {
-              productos.map((item)=><ItemProducto key={item.id} producto={item} setProductos={setProductos}/>)
+              productos.map((item)=><ItemProducto key={item._id} producto={item} setProductos={setProductos}/>)
             }
           
           </tbody>
