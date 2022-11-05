@@ -6,7 +6,7 @@ const CardsProducto = ({producto}) => {
   return (
     <Col md={4}>
       <Card>
-        <Card.Img variant="top" src={producto.imagen}  style={{ height: "18rem" }}/>
+        <Card.Img variant="top" src={producto.imagen}  style={{ height:400 }}/>
         <Card.Body>
           <Card.Title>{producto.nombreProducto}</Card.Title>
           <Card.Text>
